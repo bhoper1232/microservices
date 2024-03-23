@@ -5,7 +5,6 @@ import com.bhoper.clients.fraud.FraudClient;
 import com.bhoper.clients.notification.NotificationClient;
 import com.bhoper.clients.notification.NotificationRequest;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
 
 @Service
 public class CustomerService {
