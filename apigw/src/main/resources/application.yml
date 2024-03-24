@@ -1,8 +1,16 @@
+server:
+  port: 8083
+
 spring:
   application:
     name: api-gateway
-server:
-  port: 8083
+  cloud:
+    gateway:
+      routes:
+        - id: customer
+          uri: lb://CUSTOMER
+          predicates:
+            - Path=/api/v1/customers/**
 
 eureka:
   client:
